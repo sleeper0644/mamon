@@ -1,0 +1,9 @@
+body {
+
+}
+
+.header {
+    width: 100%;
+    max-width: 1180px;
+    background-color: yellowgreen;
+}
