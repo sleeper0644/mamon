@@ -1,9 +1,167 @@
-body {
+@import url(./reset.css);
 
+@font-face {
+    font-family: 'Hellix_SB';
+    src: url('../fonts/Hellix-SemiBold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'Hellix_B';
+    src: url('../fonts/Hellix-Bold.woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellix_R';
+    src: url('../fonts/Hellix-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellix_L';
+    src: url('../fonts/Hellix-Light.woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --color-black: #202020;
+    --color-acent: #5528FF;
+    --color-white: #ffffff;
+    --color-border:#C2C2C2;
+    --color-paragraph: #4F4F4F;
+    --font-bold: 'Hellix_B';
+    --font-Sami-Bold: 'Hellix_SB';
+    --font-Regular: 'Hellix_R';
+    --font-light: 'Hellix_L';
+}
+
+body {
+font-family: var(--font-Regular);
+}
+
+/*header block style*/
 .header {
     width: 100%;
     max-width: 1180px;
-    background-color: yellowgreen;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-bold);
+    font-weight: 700;
 }
+
+.wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+/*header logo block style*/
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo__img {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-image: url('../img/header-logo.svg');
+    background-size: cover;
+}
+
+.logo__text {
+    font-size: 24px;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+/*header navigation blockcstyle*/
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+   
+}
+
+.nav__item {
+    margin-left: 15px; 
+}
+
+.nav__link {
+    color: var(--color-black);
+}
+
+.nav__btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--color-white);
+    background: var(--color-acent) ;
+    border: none;
+    font-weight: 700;
+}
+
+.page {
+    padding: 40px 0;
+    position: relative;
+
+}
+
+.page__button {
+    padding: 10px 45px;
+    border-radius: 10px;
+    color: var(--color-white);
+    background: var(--color-acent) ;
+    border: none;
+    font-size: 24px;
+}
+
+.page-top {
+    border-top: 1px solid var(--color-border);
+}
+
+.title--main {
+    font-size: 57px;
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+.text--main {
+    width: 741px;
+    font-size: 32px;
+    line-height: 1.5;
+    color: var(--color-paragraph);
+    padding-bottom: 70px;
+    padding-top: 24px;
+}
+
+.page h2 {
+    position: absolute;
+    top: -15px;
+    font-size: 14px;
+    font-weight: 300;
+    background: var(--color-white);
+    color: var(--color-border);
+    padding: 5px 15px;
+}
+
